@@ -1,0 +1,72 @@
+.team {
+  padding: 15rem 0;
+  background-color: $gray-blur;
+  margin-bottom: 15rem;
+  &-content {
+    display: grid;
+    grid-template-columns: 36rem 1fr;
+    grid-gap: 0 14rem;
+  }
+  &-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  &-heading {
+    margin-bottom: 4rem;
+    font-weight: 800;
+  }
+  p {
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    color: #808286;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  &-peoples {
+    display: flex;
+    flex-shrink: 1;
+  }
+  &-person {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  &-person-left {
+    img {
+      &:first-child {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      &:last-child {
+        width: 62.1%;
+        margin-left: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &-content {
+      grid-gap: 0 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 6rem 0;
+    margin-bottom: 6rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    &-content {
+      grid-template-columns: 1fr;
+    }
+
+    &-intro {
+      margin-bottom: 6rem;
+    }
+  }
+}

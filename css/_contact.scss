@@ -1,0 +1,45 @@
+.contact {
+  padding: 15rem 0;
+  background-image: url("../images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &-top {
+    margin-bottom: 10rem;
+  }
+  &-heading {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    color: white;
+    strong {
+      font-weight: 800;
+    }
+  }
+  &-alias {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 57rem;
+    margin: 0 auto;
+    color: white;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 57rem;
+    margin: 0 auto;
+    input,
+    textarea {
+      margin-bottom: 3rem;
+    }
+  }
+  &-submit {
+    background-image: linear-gradient(to right, #f474a2, #ffad3a);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 6rem 0;
+  }
+}

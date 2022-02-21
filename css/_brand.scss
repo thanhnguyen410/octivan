@@ -1,0 +1,28 @@
+.brand {
+  margin-bottom: 15rem;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 9.5rem 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 6rem;
+    &-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
