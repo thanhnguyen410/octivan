@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 
   document.addEventListener("click", function (e) {
-    console.log("menuWrap", menuWrap.contains(e.target));
     if (
       !menuWrap.contains(e.target) &&
       !e.target.matches(".header-open-menu")
